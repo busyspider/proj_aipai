@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*variable definition*/
+$u_fontfamily: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+$u_fontsize:    14px;
+$bg_bluegrey: #3c5a76;
+
+/*submodule definition*/
+
+@mixin link_display {
+    outline:none;
+    text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+	font-size: $u_fontsize;
+
+}
+
+
+@mixin link_img($width,$height,$url) {
+    text-indent: -9999em;
+	background-repeat: no-repeat;
+	width:$width;
+	height:$height;
+	background-image: $url;
+	cursor:pointer;
+}
+
+@mixin single_img($width,$height,$url) {
+	background-repeat: no-repeat;
+	width:$width;
+	height:$height;
+	background-image: $url;
+}
+
+@mixin text_box($fontfamily,$fontsize,$fontcolor,$width,$height)
+{
+font-family:   $fontfamily;
+font-size:     $fontsize;
+color:         $fontcolor;
+width:         $width;
+height:        $height;
+}
+
+/*start*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+div {
+	display: block;
+}
+
+ a  {
+    @include link_display;
+	&:link {@include link_display;}
+	&:visited {@include link_display;}
+	}
+	
+ /*body description*/
+ 
+  .page-signup {
+	font-size: $u_fontsize;
+	font-family: $u_fontfamily;
+	cursor: default;
+	background-color: $bg_bluegrey;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+ /*header*/
+ 
+ #header #nav {
+	width: 60px;
+	padding: 0;
+}
+ .login-button {
+    @include link_img(60px,30px,url(img/button.png));
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	display:block;
+	}
+	
+/*content*/
+
+#content {
+	min-height: 330px;
+	margin: 0 auto;
+	display:block;
+	
+}
+.clearfix form {
+	display: block;
+}
+
+.signup-wrapper {
+	position: absolute;
+	top: 25%;
+	width: 550px;
+	left: 30%;
+	height: 327px;
+}
+	
+.logo {
+    @include link_img(500px,300px,url(img/register-bg-dark-2.png));
+    margin: 0px auto;
+	display:block;
+}
+
+.message_box{
+    @include text_box ($u_fontfamily,16px,#FFF,550px,40px);
+	margin: 0px auto;
+	display: block;
+}
+
+#signup_form {
+	border: none;
+	width: 550px;
+	height: 40px;
+	padding-right: 15px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	display: block;
+}
+
+.signup-item-wrapper{
+    @include single_img (194px,40px,url(img/reg-v2-input-sprites.png));
+	background-attachment: scroll;
+	/*background-position: 0px -40px;*/
+	float: left;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.signup-input {
+	width: 198px;
+	height: 40px;
+	padding-top:8px;
+	overflow: hidden;
+	font-size: 18px;
+	color: #324F65;
+}
+
+.signup-label {
+	position: absolute;
+	left: 40px;
+	top: 8px;
+	font-size: 18px;
+	cursor: text;
+	color:  #92A2AF;
+}
+
+
+.signup-submit {
+    @include link_img(173px,40px,url(img/reg%20button.png));
+	border: none;
+	background-attachment: scroll;
+	/*background-position: 0 -40px;*/
+}
+
+button {
+	-webkit-appearance: button;
+	display: block;
+}
+
+/*footer*/
+#footer {
+	position: relative;
+	top:600px;
+	height: 20px;
+	clear: both;
+	width: 100%;
+	text-align: center;
+	color: #979B9E;
+	display: block;
+	
+	a {
+	color:#979B9E;
+	&:link {color:#979B9E};
+	&:visited{color:#979B9E};
+	&:hover  {color:#FFF};
+	}
+	
+	.footer-item{margin:0 5px;}
+    }

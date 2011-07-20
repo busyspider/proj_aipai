@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*variable definition*/
+/*submodule definition*/
+/*start*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+  padding: 0;
+  margin: 0;
+  font-size: 14px; }
+
+div {
+  display: block; }
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px; }
+
+/*body description */
+/*body  signup-page*/
+.page-signup {
+  font-size: 14px;
+  font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+  cursor: default;
+  background-color: #3c5a76;
+  background-repeat: no-repeat;
+  display: block; }
+
+/*body  login-page*/
+.page-login {
+  font-size: 14px;
+  font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+  cursor: default;
+  background-color: #3c5a76;
+  background-repeat: no-repeat;
+  display: block; }
+
+/*header*/
+/*signup_page_header*/
+.login-button {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 30px;
+  background-image: url(img/button.png);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: block; }
+
+/*login_page_header*/
+.signup-button {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 30px;
+  background-image: url(img/login-v2-register.png);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  display: block; }
+
+/*content*/
+#content {
+  min-height: 330px;
+  margin: 0 auto;
+  display: block; }
+
+.signup-wrapper {
+  position: absolute;
+  top: 25%;
+  width: 550px;
+  left: 30%;
+  height: 327px; }
+
+.login-wrapper {
+  position: absolute;
+  top: 15%;
+  width: 550px;
+  left: 30%;
+  height: 327px; }
+
+.signup-logo {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 300px;
+  background-image: url(img/register-bg-dark-2.png);
+  cursor: pointer;
+  margin: 0px auto;
+  display: block; }
+
+.login-logo {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 370px;
+  background-image: url(img/logo.png);
+  cursor: pointer;
+  margin: 0px auto;
+  display: block; }
+
+.clearfix {
+  display: block; }
+
+.message_box {
+  font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+  font-size: 16px;
+  color: white;
+  width: 550px;
+  height: 40px;
+  display: block;
+  margin: 0px auto; }
+
+#signup_form {
+  border: none;
+  width: 550px;
+  height: 40px;
+  padding-right: 15px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  display: block; }
+
+.signup-item-wrapper {
+  background-repeat: no-repeat;
+  width: 194px;
+  height: 40px;
+  background-image: url(img/reg-v2-input-sprites.png);
+  background-attachment: scroll;
+  float: left;
+  margin-right: 30px;
+  margin-left: 30px; }
+
+.login-item-wrapper {
+  background-repeat: no-repeat;
+  width: 194px;
+  height: 40px;
+  background-image: url(img/reg-v2-input-sprites.png);
+  background-attachment: scroll;
+  float: left;
+  padding-right: 15px;
+  overflow: hidden;
+  position: relative; }
+
+.signup-input {
+  width: 198px;
+  height: 40px;
+  padding-top: 8px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #324F65;
+  border-style: solid;
+  border-color: #39C; }
+
+.login-input {
+  width: 198px;
+  height: 40px;
+  padding-top: 8px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #324F65;
+  border-style: solid;
+  border-color: #39C; }
+
+.signup-label {
+  position: absolute;
+  left: 40px;
+  top: 8px;
+  font-size: 18px;
+  cursor: text;
+  color: #92A2AF; }
+
+.login-label {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  font-size: 18px;
+  cursor: text;
+  color: #92A2AF; }
+
+.signup-submit {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  width: 173px;
+  height: 40px;
+  background-image: url(img/reg%20button.png);
+  cursor: pointer;
+  border: none;
+  background-attachment: scroll; }
+
+.login-submit {
+  text-indent: -9999em;
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 40px;
+  background-image: url(img/submit.png);
+  cursor: pointer;
+  border: none;
+  background-attachment: scroll; }
+
+.login-misc {
+  padding-top: 5px;
+  text-align: right;
+  width: 550px;
+  color: #FFF; }
+
+button {
+  -webkit-appearance: button;
+  display: block; }
+
+.forget-password {
+  margin-right: 250px; }
+
+/*footer*/
+#footer {
+  position: relative;
+  top: 600px;
+  height: 20px;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  color: #979B9E;
+  display: block; }
+  #footer a {
+    color: #979B9E; }
+    #footer a:hover {
+      color: #FFF; }
+  #footer .footer-item {
+    margin: 0 5px; }

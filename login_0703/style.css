@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*标签申明*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, code, em, img, q, small, strong, dd, dl, dt, li, ol, ul, fieldset, form, label, table, tbody, tr, th, td, input {
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+div {
+	display: block;
+}
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+	font-size: 14px;
+}
+p {
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+/*body 描述*/
+.page-login {
+	font-size: 14px;
+	font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;
+	cursor: default;
+	background-color: #3c5a76;
+	background-repeat: no-repeat;
+	display: block;
+}
+/*头部注册部分*/
+/*#header #nav {
+	width: 60px;
+	padding: 0;
+}*/
+.signup-button {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	width: 60px;
+	height: 30px;
+	text-indent: -9999em;
+	background-image: url(img/login-v2-register.png);
+	background-repeat: no-repeat;
+	background-position: 0 -30;
+}
+/*中间logo以及输入框部分*/
+#content {
+	/*height: auto;*/
+	min-height: 330px;
+	margin: 0 auto;
+}
+.clearfix, #content {
+	display: block;
+}
+.login-wrapper {
+	position: absolute;
+	top: 15%;
+	width: 550px;
+	left: 30%;
+	height: 327px;
+}
+.login-logo {text-indent: -9999em;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 370px;
+    background-image: url(img/logo.png);
+    cursor: pointer;
+    margin: 0px auto;
+    display: block;
+  
+	
+}
+form {
+	display: block;
+}
+input, a {
+	outline: none;
+}
+.login-item-wrapper {
+	border: none;
+	width: 194px;
+	height: 40px;
+	padding-right: 15px;
+	overflow: hidden;
+	position: relative;
+	background-attachment: scroll;
+	background-image: url(img/reg-v2-input-sprites.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	float: left;
+}
+.login-input {
+	width: 198px;
+	height: 40px;
+	padding-top:8px;
+	overflow: hidden;
+	border-style: solid;
+	border-color: #39C;
+	font-size: 18px;
+	color: #324F65;
+}
+.login-label {
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	font-size: 18px;
+	cursor: text;
+	color: #92A2AF;
+}
+.login-submit {
+	width: 130px;
+	height: 40px;
+	border: none;
+	cursor: pointer;
+	text-indent: -9999em;
+	background-attachment: scroll;
+	background-image: url(img/submit.png);
+	background-repeat: no-repeat;
+	background-position: 0 -40px;
+}
+.login-misc {
+	padding-top: 5px;
+	text-align: right;
+	width: 550px;
+	color: #FFF;
+}
+button {
+	-webkit-appearance: button;
+}
+.forget-password {
+	margin-right:250px;
+}
+/*footer*/
+#footer {
+	position: absolute;
+	top: 690px;
+	height: 20px;
+	clear: both;
+	width: 1950px;
+	text-align: center;
+	color: #FFF;
+	background-attachment: scroll;
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+#footer a, #footer a:link, #footer a:visited {
+	color: #CCC;
+}
+#footer a:hover {
+	color:#FFF
+}
+#footer ul{
+	display: block;
+	margin-left: 380px;
+}
+#footer li {
+	margin-right:13px;
+	float:left;
+	list-style-type: none;
+}
